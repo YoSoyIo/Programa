@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <meta charset="utf-8" content="text/html">
+        <title>Percepción de colores</title>
+        <link rel="stylesheet"  href="CSS\estilo.css">
+    </head>
+    <body class="body" id="b1">
+        <p>
+            <h1><strong>Comparación de colores</strong></h1>
+            <button onclick="FondoB();" class="botones">Fondo blanco</button>
+            <button onclick="FondoN();" class="botones">Fondo negro</button>
+        </p>
+        <p>
+            <canvas id="canvas" width="1300" height="450" style="border: 1px solid #000000"></canvas>
+        </p>
+        <p>
+            <span><strong>R: </strong></span>
+            <label id="lb1"></label>
+            <input type="range" id="r1" min="0" max="255" value="0" step="1" class="slider" class="slidecontainer">
+            <label>R:</label>
+            <input type="text" size="2" class="secreto" id="txt1" maxlength="3">
+            <input type="text" size="2" class="secreto" id="txtE1" >
+        </p>
+        <p>
+            <span><strong>G: </strong></span>
+            <label id="lb2"></label>
+            <input type="range" id="r2" min="0" max="255" value="0" step="1" class="slider" class="slidecontainer">
+            <label>G:</label>
+            <input type="text" size="2" class="secreto" id="txt2" maxlength="3">
+            <input type="text" size="2" class="secreto" id="txtE2">
+        </p>
+        <p>
+            <span><strong>B: </strong></span>
+            <label id="lb3"></label>
+            <input type="range" id="r3" min="0" max="255" value="0" step="1" class="slider" class="slidecontainer">
+            <label>B:</label>
+            <input type="text" size="2" class="secreto" id="txt3" maxlength="3">
+            <input type="text" size="2" class="secreto" id="txtE3">
+        </p>
+        <p>
+            <button onclick="LienzoRandom();" class="botones">Generar aleatorio</button>
+            <button onclick="CalcularE();" class="botones">Calcular diferencia</button>
+        </p>
+    </body>
+    <script src="JS/cerebro.js"></script>
+</html>
